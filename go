@@ -32,3 +32,4 @@ else
 fi
 cd "$PROJECT_ROOT"
 python -u -m go $@
+
