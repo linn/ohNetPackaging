@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup Condition="'$(Platform)' == 'AnyCPU'">
-    <ohNetPlatform>x86</ohNetPlatform>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Platform)' != 'AnyCPU'">
-    <ohNetPlatform>$(Platform)</ohNetPlatform>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)..\..\ohNet\net40\$(ohNetPlatform)\ohNet.dll">
-      <Link>ohNet.dll</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+  <Target Name="OhNetCopy" BeforeTargets="AfterBuild">
+    <PropertyGroup Condition="'$(Platform)' == 'AnyCPU'">
+      <ohNetDllPath>$(MSBuildThisFileDirectory)..\..\ohNet\net40\x86\ohNet.dll</ohNetDllPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Platform)' != 'AnyCPU'">
+      <ohNetDllPath>$(MSBuildThisFileDirectory)..\..\ohNet\net40\$(Platform)\ohNet.dll</ohNetDllPath>
+    </PropertyGroup>
+    <Message Importance="high" Text="-- ohNet.targets: Copying $(libOhNetPath) to $(TargetDir)" />
+    <Copy SourceFiles="$(ohNetDllPath)" DestinationFolder="$(TargetDir)" />
+  </Target>
 </Project>
