@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Platform)' == 'iPhoneSimulator' ">
+    <ohnetDir>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/x86/</ohnetDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'iPhone' ">
+    <ohnetDir>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/armv7/</ohnetDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ohNetGccFlags>-L$(ohnetDir) -lohNetCore -force_load $(ohnetDir)libohNetCore.a</ohnetGccFlags>
+    <ohNetArgs>-cxx -gcc_flags "$(ohNetGccFlags)"</ohNetArgs>
+  </PropertyGroup>
+  
+  <!-- 
+  If MtouchExtraArgs is set, we don't know if the gcc flags have already been specified.
+  So, only set it if it is not already set. Any project that includes ohNet that sets MtouchEventArgs
+  will need to include $(ohNetGccFlags) in the gcc flags.
+  -->
+  <PropertyGroup Condition=" '$(MtouchExtraArgs)' == '' ">
+    <MtouchExtraArgs>$(ohNetArgs)</MtouchExtraArgs>
+  </PropertyGroup>
+</Project>

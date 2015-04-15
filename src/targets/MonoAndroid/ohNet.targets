@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ohNetLibDir>$(MSBuildThisFileDirectory)../../ohNet/MonoAndroid/</ohNetLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <AndroidNativeLibrary Include="$(ohNetLibDir)armeabi\libohNet.so">
+      <Link>libohNet.so</Link>
+      <Abi>armeabi</Abi>
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(ohNetLibDir)x86\libohNet.so">
+      <Link>libohNet.so</Link>
+      <Abi>x86</Abi>
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(ohNetLibDir)armeabi-v7a\libohNet.so">
+      <Link>libohNet.so</Link>
+      <Abi>armeabi-v7a</Abi>
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </AndroidNativeLibrary>
+  </ItemGroup>
+</Project>
