@@ -24,18 +24,15 @@
     
     <file src="dependencies/mac/x86/ohNet/lib/libohNet.dylib" target="ohNet/MonoMac/x86" />
     <file src="dependencies/mac/x64/ohNet/lib/libohNet.dylib" target="ohNet/MonoMac/x64" />
-    <file src="src/targets/MonoMac/ohNet.targets" target="build/MonoMac" />
-    <file src="src/targets/MonoMac/ohNet.targets" target="build/Xamarin.Mac" />
+    <file src="src/targets/MonoMac/ohNet.targets" target="build/MonoMac+Xamarin.Mac" />
     
     <file src="dependencies/android/anycpu/ohNet/lib/armeabi/libohNet.so" target="ohNet/MonoAndroid/armeabi" />
     <file src="dependencies/android/anycpu/ohNet/lib/armeabi-v7a/libohNet.so" target="ohNet/MonoAndroid/armeabi-v7a" />
     <file src="dependencies/android/anycpu/ohNet/lib/x86/libohNet.so" target="ohNet/MonoAndroid/x86" />
-    <file src="src/targets/MonoAndroid/ohNet.targets" target="build/MonoAndroid" />
-    <file src="src/targets/MonoAndroid/ohNet.targets" target="build/Xamarin.Android" />
+    <file src="src/targets/MonoAndroid/ohNet.targets" target="build/MonoAndroid+Xamarin.Android" />
     
     <file src="dependencies/ios/armv7/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/armv7" />
     <file src="dependencies/ios/x86/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/x86" />
-    <file src="src/targets/MonoTouch/ohNet.targets" target="build/MonoTouch" />
-    <file src="src/targets/MonoTouch/ohNet.targets" target="build/Xamarin.iOs" />
+    <file src="src/targets/MonoTouch/ohNet.targets" target="build/MonoTouch+Xamarin.iOS" />
   </files>
 </package>
