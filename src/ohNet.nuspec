@@ -12,8 +12,6 @@
     <copyright>Copyright 2015</copyright>
   </metadata>
   <files>
-    <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="lib" />
-    
     <file src="dependencies/windows/x86/ohNet/lib/ohNet.dll" target="ohNet/net40/AnyCPU" />
     <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="ohNet/net40/AnyCPU" />
     <file src="dependencies/windows/x86/ohNet/lib/ohNet.dll" target="ohNet/net40/x86" />
