@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Condition=" '$(Platform)' == 'iPhoneSimulator' ">
+    <Reference Include="ohNet.net.dll">
+      <HintPath>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/x86/ohNet.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Platform)' == 'iPhone' ">
+    <Reference Include="ohNet.net.dll">
+      <HintPath>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/armv7/ohNet.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
   <PropertyGroup Condition=" '$(Platform)' == 'iPhoneSimulator' ">
     <ohnetDir>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/x86/</ohnetDir>
   </PropertyGroup>

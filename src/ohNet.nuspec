@@ -12,30 +12,44 @@
     <copyright>Copyright 2015</copyright>
   </metadata>
   <files>
-    <!-- TODO: not platform independent... -->
     <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="lib" />
     
+    <file src="dependencies/windows/x86/ohNet/lib/ohNet.dll" target="ohNet/net40/AnyCPU" />
+    <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="ohNet/net40/AnyCPU" />
     <file src="dependencies/windows/x86/ohNet/lib/ohNet.dll" target="ohNet/net40/x86" />
+    <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="ohNet/net40/x86" />
     <file src="dependencies/windows/x64/ohNet/lib/ohNet.dll" target="ohNet/net40/x64" />
+    <file src="dependencies/windows/x64/ohNet/lib/ohNet.net.dll" target="ohNet/net40/x64" />
     <file src="src/targets/net40/ohNet.targets" target="build/net40" />
     
+    <file src="dependencies/linux/x86/ohNet/lib/libohNet.so" target="ohNet/mono/AnyCPU" />
+    <file src="dependencies/linux/x86/ohNet/lib/ohNet.net.dll" target="ohNet/mono/AnyCPU" />
     <file src="dependencies/linux/x86/ohNet/lib/libohNet.so" target="ohNet/mono/x86" />
+    <file src="dependencies/linux/x86/ohNet/lib/ohNet.net.dll" target="ohNet/mono/x86" />
     <file src="dependencies/linux/x64/ohNet/lib/libohNet.so" target="ohNet/mono/x64" />
-    <file src="src/targets/Mono/ohNet.targets" target="build/Mono" />
+    <file src="dependencies/linux/x64/ohNet/lib/ohNet.net.dll" target="ohNet/mono/x64" />
+    <file src="src/targets/Mono/ohNet.targets" target="build/Mono10" />
     
+    <file src="dependencies/mac/x86/ohNet/lib/libohNet.dylib" target="ohNet/MonoMac/AnyCPU" />
+    <file src="dependencies/mac/x86/ohNet/lib/ohNet.net.dll" target="ohNet/MonoMac/AnyCPU" />
     <file src="dependencies/mac/x86/ohNet/lib/libohNet.dylib" target="ohNet/MonoMac/x86" />
+    <file src="dependencies/mac/x86/ohNet/lib/ohNet.net.dll" target="ohNet/MonoMac/x86" />
     <file src="dependencies/mac/x64/ohNet/lib/libohNet.dylib" target="ohNet/MonoMac/x64" />
+    <file src="dependencies/mac/x64/ohNet/lib/ohNet.net.dll" target="ohNet/MonoMac/x64" />
     <file src="src/targets/MonoMac/ohNet.targets" target="build/MonoMac10" />
     <file src="src/targets/MonoMac/ohNet.targets" target="build/Xamarin.Mac10" />
     
     <file src="dependencies/android/anycpu/ohNet/lib/armeabi/libohNet.so" target="ohNet/MonoAndroid/armeabi" />
     <file src="dependencies/android/anycpu/ohNet/lib/armeabi-v7a/libohNet.so" target="ohNet/MonoAndroid/armeabi-v7a" />
     <file src="dependencies/android/anycpu/ohNet/lib/x86/libohNet.so" target="ohNet/MonoAndroid/x86" />
+    <file src="dependencies/android/anycpu/ohNet/lib/ohNet.net.dll" target="ohNet/MonoAndroid" />
     <file src="src/targets/MonoAndroid/ohNet.targets" target="build/MonoAndroid10" />
     <file src="src/targets/MonoAndroid/ohNet.targets" target="build/Xamarin.Android10" />
     
     <file src="dependencies/ios/armv7/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/armv7" />
+    <file src="dependencies/ios/armv7/ohNet/lib/ohNet.net.dll" target="ohNet/MonoTouch/armv7" />
     <file src="dependencies/ios/x86/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/x86" />
+    <file src="dependencies/ios/x86/ohNet/lib/ohNet.net.dll" target="ohNet/MonoTouch/x86" />
     <file src="src/targets/MonoTouch/ohNet.targets" target="build/MonoTouch10" />
     <file src="src/targets/MonoTouch/ohNet.targets" target="build/Xamarin.iOS10" />
   </files>
