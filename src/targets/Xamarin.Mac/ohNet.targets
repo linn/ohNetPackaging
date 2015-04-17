@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Reference Include="ohNet.net.dll">
+      <HintPath>$(MSBuildThisFileDirectory)../../ohNet/Xamarin.Mac/x86/ohNet.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <Target Name="OhNetMacCopy" BeforeTargets="AfterBuild">
+    <PropertyGroup>
+      <OhNetMacDylib>$(MSBuildThisFileDirectory)../../ohNet/Xamarin.Mac/x64/libohNet.dylib</OhNetMacDylib>
+    </PropertyGroup>
+    <Message Importance="high" Text="-- ohNet.targets: Copying $(OhNetMacDylib) to $(TargetDir)$(AssemblyName).app/Contents/MonoBundle" />
+    <Copy SourceFiles="$(OhNetMacDylib)" DestinationFolder="$(TargetDir)$(AssemblyName).app/Contents/MonoBundle" />
+  </Target>
+</Project>
