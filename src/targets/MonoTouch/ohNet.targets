@@ -18,7 +18,7 @@
     <ohnetDir>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/armv7/</ohnetDir>
   </PropertyGroup>
   <PropertyGroup>
-    <ohNetGccFlags>-L$(ohnetDir) -lohNetCore -force_load $(ohnetDir)libohNetCore.a</ohnetGccFlags>
+    <ohNetGccFlags>-L$(ohnetDir) -lohNetCore -force_load $(ohnetDir)libohNetCore.a</ohNetGccFlags>
     <ohNetArgs>-cxx -gcc_flags "$(ohNetGccFlags)"</ohNetArgs>
   </PropertyGroup>
   
