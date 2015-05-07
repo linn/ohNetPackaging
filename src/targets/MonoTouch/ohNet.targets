@@ -7,7 +7,7 @@
   </ItemGroup>
   <ItemGroup Condition=" '$(Platform)' == 'iPhone' ">
     <Reference Include="ohNet.net.dll">
-      <HintPath>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/arm-universal/ohNet.net.dll</HintPath>
+      <HintPath>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/armv7/ohNet.net.dll</HintPath>
     </Reference>
   </ItemGroup>
   
@@ -15,7 +15,7 @@
     <ohnetDir>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/x86/</ohnetDir>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'iPhone' ">
-    <ohnetDir>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/arm-universal/</ohnetDir>
+    <ohnetDir>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/armv7/</ohnetDir>
   </PropertyGroup>
   <PropertyGroup>
     <ohNetGccFlags>-L$(ohnetDir) -lohNetCore -force_load $(ohnetDir)libohNetCore.a</ohNetGccFlags>

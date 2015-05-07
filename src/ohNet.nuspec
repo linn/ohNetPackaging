@@ -41,12 +41,8 @@
     
     <file src="dependencies/ios/armv7/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/armv7" />
     <file src="dependencies/ios/armv7/ohNet/lib/ohNet.net.dll" target="ohNet/MonoTouch/armv7" />
-    <file src="dependencies/ios/arm64/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/arm64" />
-    <file src="dependencies/ios/arm64/ohNet/lib/ohNet.net.dll" target="ohNet/MonoTouch/arm64" />
     <file src="dependencies/ios/x86/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/x86" />
     <file src="dependencies/ios/x86/ohNet/lib/ohNet.net.dll" target="ohNet/MonoTouch/x86" />
-    <file src="build/ios/arm-universal/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/arm-universal" />
-    <file src="dependencies/ios/arm64/ohNet/lib/ohNet.net.dll" target="ohNet/MonoTouch/arm-universal" />
     <file src="src/targets/MonoTouch/ohNet.targets" target="build/MonoTouch10" />
     <file src="src/targets/MonoTouch/ohNet.targets" target="build/Xamarin.iOS10" />
   </files>
