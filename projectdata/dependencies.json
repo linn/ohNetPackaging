@@ -62,6 +62,13 @@
       "dest": "dependencies/ios/armv7/ohNet",
       "strip-archive-dirs":1
     },
+    {
+      "name": "ohNet-ios-arm64",
+      "version": "1.2.1586",
+      "archive-path":"http://openhome.org/releases/artifacts/ohNet/ohNet-${version}-iOs-arm64-Release.tar.gz",
+      "dest": "dependencies/ios/arm64/ohNet",
+      "strip-archive-dirs":1
+    },
     {  
       "name": "ohNetGenerated",
       "version": "1.0.66",
