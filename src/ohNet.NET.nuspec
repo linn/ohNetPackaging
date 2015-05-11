@@ -3,11 +3,11 @@
   <metadata>
     <id>ohNet.NET</id>
     <version>$version$</version>
-    <title>ohNet UPnP Stack</title>
+    <title>ohNet UPnP Stack Bindings</title>
     <authors>OpenHome</authors>
     <owners>OpenHome</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A modern, cross platform UPnP stack</description>
+    <description>.NET bindings to ohNet</description>
     <releaseNotes>first nuget release</releaseNotes>
     <copyright>Copyright 2015</copyright>
   </metadata>
