@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildThisFileDirectory)..\Mono10\ohNet.targets" Condition=" $(MonoTargetFrameworkIdentifier) == 'Mono' " />
+
+  <ItemGroup Condition=" $(MonoTargetFrameworkIdentifier) == '' ">
+    <Reference Include="ohNet.net.dll">
+      <HintPath>$(MSBuildThisFileDirectory)..\..\ohNet\net40\$(Platform)\ohNet.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

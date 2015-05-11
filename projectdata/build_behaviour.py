@@ -38,6 +38,7 @@ class Builder(OpenHomeBuilder):
         print libtoolcmd
         subprocess.check_call(libtoolcmd, cwd=os.getcwd(), shell=True)
         self.pack_nuget('src/ohNet.nuspec', '.')
+        self.pack_nuget('src/ohNet.NET.nuspec', '.')
         self.pack_nuget('src/ohNetGeneratedProxies.nuspec', '.')
         self.pack_nuget('src/ohNetGeneratedProviders.nuspec', '.')
 

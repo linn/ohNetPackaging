@@ -4,9 +4,6 @@
     <ohNetLibDir>$(MSBuildThisFileDirectory)..\..\ohNet\MonoAndroid\</ohNetLibDir>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ohNet.net.dll">
-      <HintPath>$(ohNetLibDir)AnyCPU\ohNet.net.dll</HintPath>
-    </Reference>
     <AndroidNativeLibrary Include="$(ohNetLibDir)armeabi\libohNet.so">
       <Link>libohNet.so</Link>
       <Abi>armeabi</Abi>
