@@ -23,7 +23,7 @@
     <file src="src/targets/Mono/ohNet.targets" target="build/Mono10" />
     
     <file src="dependencies/mac/x64/ohNet/lib/libohNet.dylib" target="ohNet/Xamarin.Mac/x64" />
-    <file src="src/targets/Xamarin.Mac/ohNet.targets" target="build/Xamarin.Mac10" />
+    <file src="src/targets/Xamarin.Mac/ohNet.targets" target="build/Xamarin.Mac20" />
     
     <file src="dependencies/android/anycpu/ohNet/lib/armeabi/libohNet.so" target="ohNet/MonoAndroid/armeabi" />
     <file src="dependencies/android/anycpu/ohNet/lib/armeabi-v7a/libohNet.so" target="ohNet/MonoAndroid/armeabi-v7a" />
