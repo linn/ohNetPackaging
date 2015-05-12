@@ -12,6 +12,6 @@
     <copyright>Copyright 2015</copyright>
   </metadata>
   <files>
-    <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="lib/portable-net40+wp80+MonoAndroid10+xamarinmac20+xamarinios10+MonoTouch10" />
+    <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="lib/portable-net45+win+wpa81+wp80" />
   </files>
 </package>
