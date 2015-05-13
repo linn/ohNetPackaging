@@ -12,6 +12,8 @@
     <copyright>Copyright 2015</copyright>
   </metadata>
   <files>
+    <file src="dependencies/ios/x86/ohNet/lib/ohNet.net.dll" target="ohNet/MonoTouch/x86" />
+    <file src="dependencies/ios/arm64/ohNet/lib/ohNet.net.dll" target="ohNet/MonoTouch/arm-universal" />
     <file src="src/targets/MonoTouch/ohNet.NET.targets" target="build/MonoTouch10" />
     <file src="src/targets/MonoTouch/ohNet.NET.targets" target="build/Xamarin.iOS10" />
   
