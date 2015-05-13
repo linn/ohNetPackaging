@@ -12,6 +12,18 @@
     <copyright>Copyright 2015</copyright>
   </metadata>
   <files>
+    <file src="src/targets/net40/ohNet.NET.targets" target="build/net40" />
+
+    <file src="src/targets/Mono/ohNet.NET.targets" target="build/Mono10" />
+    
+    <file src="src/targets/Xamarin.Mac/ohNet.NET.targets" target="build/Xamarin.Mac20" />
+   
+    <file src="src/targets/MonoAndroid/ohNet.NET.targets" target="build/MonoAndroid10" />
+    <file src="src/targets/MonoAndroid/ohNet.NET.targets" target="build/Xamarin.Android10" />
+    
+    <file src="src/targets/MonoTouch/ohNet.NET.targets" target="build/MonoTouch10" />
+    <file src="src/targets/MonoTouch/ohNet.NET.targets" target="build/Xamarin.iOS10" />
+  
     <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="lib/portable-net45+win+wpa81+wp80" />
   </files>
 </package>
