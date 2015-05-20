@@ -22,6 +22,7 @@
     <file src="dependencies/linux/x64/ohNet/lib/libohNet.so" target="ohNet/mono/x64" />
     <file src="src/targets/Mono/ohNet.targets" target="build/Mono10" />
     
+    <file src="dependencies/mac/x86/ohNet/lib/libohNet.dylib" target="ohNet/Xamarin.Mac/x86" />
     <file src="dependencies/mac/x64/ohNet/lib/libohNet.dylib" target="ohNet/Xamarin.Mac/x64" />
     <file src="src/targets/Xamarin.Mac/ohNet.targets" target="build/Xamarin.Mac20" />
     
