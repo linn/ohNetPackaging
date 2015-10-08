@@ -17,10 +17,10 @@
     <file src="src/targets/MonoTouch/ohNet.NET.targets" target="build/MonoTouch10" />
     <file src="src/targets/MonoTouch/ohNet.NET.targets" target="build/xamarinios10" />
     
-    <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="ohNet/net40" />
+    <file src="dependencies/windows/x64/ohNet/lib/ohNet.net.dll" target="ohNet/net40" />
     <file src="src/targets/net40/ohNet.NET.targets" target="build/net40" />
   
-    <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="ohNet/portable-net45+win+wpa81+wp80" />
+    <file src="dependencies/windows/x64/ohNet/lib/ohNet.net.dll" target="ohNet/portable-net45+win+wpa81+wp80" />
     <file src="src/targets/portable-net45+win+wpa81+wp80/ohNet.NET.targets" target="build/portable-net45+win+wpa81+wp80" />
   </files>
 </package>
