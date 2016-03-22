@@ -1,75 +1,75 @@
 [
     {
       "name": "ohNet-windows-x86",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Windows-x86-Release.tar.gz",
       "dest": "dependencies/windows/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-windows-x64",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Windows-x64-Release.tar.gz",
       "dest": "dependencies/windows/x64/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-linux-x86",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Linux-x86-Release.tar.gz",
       "dest": "dependencies/linux/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-linux-x64",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Linux-x64-Release.tar.gz",
       "dest": "dependencies/linux/x64/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-android-anycpu",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Android-anycpu-Release.tar.gz",
       "dest": "dependencies/android/anycpu/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-mac-x86",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Mac-x86-Release.tar.gz",
       "dest": "dependencies/mac/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-mac-x64",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Mac-x64-Release.tar.gz",
       "dest": "dependencies/mac/x64/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-ios-x86",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-iOs-x86-Release.tar.gz",
       "dest": "dependencies/ios/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-ios-armv7",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-iOs-armv7-Release.tar.gz",
       "dest": "dependencies/ios/armv7/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-ios-arm64",
-      "version": "1.6.1982",
+      "version": "1.6.2000",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-iOs-arm64-Release.tar.gz",
       "dest": "dependencies/ios/arm64/ohNet",
       "strip-archive-dirs":1
     },
-    {  
+    {
       "name": "ohNetGenerated",
       "version": "1.0.92",
       "archive-path": "http://builds.openhome.org/releases/artifacts/ohNetGenerated/ohNetGenerated-${version}-AnyPlatform-Release.tar.gz",
