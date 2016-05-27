@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildThisFileDirectory)..\Mono10\ohNet.targets" Condition=" $(MonoTargetFrameworkIdentifier) == 'Mono' " />
+  <Import Project="$(MSBuildThisFileDirectory)..\qnap\x86\ohNet.targets" Condition=" $(MonoTargetFrameworkIdentifier) == 'Qnap-x86' " />
+  <Import Project="$(MSBuildThisFileDirectory)..\qnap\x19\ohNet.targets" Condition=" $(MonoTargetFrameworkIdentifier) == 'Qnap-x19' " />
+  <Import Project="$(MSBuildThisFileDirectory)..\qnap\x31\ohNet.targets" Condition=" $(MonoTargetFrameworkIdentifier) == 'Qnap-x31' " />
+  <Import Project="$(MSBuildThisFileDirectory)..\qnap\x41\ohNet.targets" Condition=" $(MonoTargetFrameworkIdentifier) == 'Qnap-x41' " />
 
   <Target Name="OhNetWinCopy" BeforeTargets="AfterBuild" Condition=" $(MonoTargetFrameworkIdentifier) == '' ">
     <Message Importance="high" Text="-- ohNet.targets: No mono target framework identifier set, defaulting to Windows behaviour" />
