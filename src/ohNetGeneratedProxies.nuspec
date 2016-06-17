@@ -13,6 +13,7 @@
   </metadata>
   <files>
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgCredentials1.net.dll" target="lib" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgDebug1.net.dll" target="lib" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgExakt1.net.dll" target="lib" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgExakt2.net.dll" target="lib" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgInfo1.net.dll" target="lib" />
@@ -29,7 +30,10 @@
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgSubscriptionLongPoll1.net.dll" target="lib" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgTestBasic1.net.dll" target="lib" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgTestLights1.net.dll" target="lib" />
-    
+
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkFlash1.net.dll" target="lib" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkVolkano1.net.dll" target="lib" />
+
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgAVTransport1.net.dll" target="lib" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgAVTransport2.net.dll" target="lib" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgConnectionManager1.net.dll" target="lib" />
