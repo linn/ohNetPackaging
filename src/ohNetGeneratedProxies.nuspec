@@ -12,41 +12,41 @@
     <copyright>Copyright 2015</copyright>
   </metadata>
   <files>
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgCredentials1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgDebug1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgExakt1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgExakt2.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgInfo1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgMediaServer1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgNetworkMonitor1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgPlaylist1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgPlaylistManager1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgProduct1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgRadio1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgReceiver1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgSender1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgTime1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgVolume1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgSubscriptionLongPoll1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgTestBasic1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgTestLights1.net.dll" target="lib" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgCredentials1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgDebug1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgExakt1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgExakt2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgInfo1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgMediaServer1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgNetworkMonitor1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgPlaylist1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgPlaylistManager1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgProduct1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgRadio1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgReceiver1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgSender1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgTime1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpAvOpenhomeOrgVolume1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgSubscriptionLongPoll1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgTestBasic1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgTestLights1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
 
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkFlash1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkVolkano1.net.dll" target="lib" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkFlash1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkVolkano1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
 
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgAVTransport1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgAVTransport2.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgConnectionManager1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgConnectionManager2.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgContentDirectory1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgContentDirectory2.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgContentDirectory3.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgDimming1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgRenderingControl1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgRenderingControl2.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgScheduledRecording1.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgScheduledRecording2.net.dll" target="lib" />
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgSwitchPower1.net.dll" target="lib" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgAVTransport1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgAVTransport2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgConnectionManager1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgConnectionManager2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgContentDirectory1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgContentDirectory2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgContentDirectory3.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgDimming1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgRenderingControl1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgRenderingControl2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgScheduledRecording1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgScheduledRecording2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpUpnpOrgSwitchPower1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
   </files>
 </package>
 
