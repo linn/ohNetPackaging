@@ -113,7 +113,7 @@
     },
     {
       "name": "ohNetGenerated",
-      "version": "1.1.112",
+      "version": "1.1.113",
       "archive-path": "http://builds.openhome.org/releases/artifacts/ohNetGenerated/ohNetGenerated-${version}-AnyPlatform-Release.tar.gz",
       "dest": "dependencies/AnyPlatform/ohNetGenerated",
       "strip-archive-dirs":1
