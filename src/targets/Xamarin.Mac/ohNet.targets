@@ -4,7 +4,10 @@
     <PropertyGroup>
       <OhNetMacDylib>$(MSBuildThisFileDirectory)../../ohNet/Xamarin.Mac/x64/libohNet.dylib</OhNetMacDylib>
     </PropertyGroup>
-    <Message Importance="high" Text="-- ohNet.targets: Copying $(OhNetMacDylib) to $(TargetDir)$(AssemblyName).app/Contents/MonoBundle" />
-    <Copy SourceFiles="$(OhNetMacDylib)" DestinationFolder="$(TargetDir)$(AssemblyName).app/Contents/MonoBundle" />
+    <Message Importance="high" Text="-- ohNet.targets: Copying $(OhNetMacDylib) to $(TargetDir) and $(TargetDir)$(AssemblyName).app/Contents/MonoBundle" />
+    <!-- for console apps -->
+    <Copy SourceFiles="$(OhNetMacDylib)" DestinationFolder="$(TargetDir)" /> 
+    <!-- for xam mac packaged apps -->
+    <Copy SourceFiles="$(OhNetMacDylib)" DestinationFolder="$(TargetDir)$(AssemblyName).app/Contents/MonoBundle" /> 
   </Target>
 </Project>
