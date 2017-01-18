@@ -21,6 +21,15 @@ class Builder(OpenHomeBuilder):
 
     def setup(self):
         self.nuget_server = self.env.get('NUGET_SERVER')
+		
+        # write release version in dependencies.json
+        f1 = open('projectdata/dependencies.json', 'r')
+        c = f1.read() % {'ohnet_version' : self.env.get('OHNET_VERSION'), 'ohnet_generated_version' : self.env.get('OHNET_GENERATED_VERSION')}
+        f1.close()
+		
+        f2 = open('projectdata/dependencies.json', 'w')
+        f2.write(c)
+        f2.close()
 
     def clean(self):
         if os.path.isdir(self.build_dir):
