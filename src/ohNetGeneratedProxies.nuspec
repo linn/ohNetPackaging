@@ -35,6 +35,7 @@
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgTestBasic1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpOpenhomeOrgTestLights1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
 
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkExaktInputs1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkFlash1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkPrivacy1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/CpLinnCoUkVolkano1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
