@@ -31,6 +31,7 @@
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgVolume1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgVolume2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgVolume3.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgTransport1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvOpenhomeOrgSubscriptionLongPoll1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvOpenhomeOrgTestBasic1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvOpenhomeOrgTestLights1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
@@ -39,6 +40,7 @@
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvLinnCoUkFlash1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvLinnCoUkPrivacy1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvLinnCoUkVolkano1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvLinnCoUkCloud1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
 
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvUpnpOrgAVTransport1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvUpnpOrgAVTransport2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
