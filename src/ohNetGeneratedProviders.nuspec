@@ -27,6 +27,7 @@
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgRadio1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgReceiver1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgSender1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgSender2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgTime1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgVolume1.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/DvAvOpenhomeOrgVolume2.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
