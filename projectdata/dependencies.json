@@ -7,13 +7,6 @@
       "strip-archive-dirs":1
     },
     {
-      "name": "ohNet-windows-x64",
-      "version": "%(ohnet_version)s",
-      "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Windows-x64-Release.tar.gz",
-      "dest": "dependencies/windows/x64/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
       "name": "ohNet-linux-x86",
       "version": "%(ohnet_version)s",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Linux-x86-Release.tar.gz",
@@ -116,6 +109,13 @@
       "version": "%(ohnet_generated_version)s",
       "archive-path": "http://builds.openhome.org/releases/artifacts/ohNetGenerated/ohNetGenerated-${version}-AnyPlatform-Release.tar.gz",
       "dest": "dependencies/AnyPlatform/ohNetGenerated",
+      "strip-archive-dirs":1
+    },
+    {
+      "name": "ohNetGenerated-Windows10",
+      "version": "%(ohnet_generated_version)s",
+      "archive-path": "http://builds.openhome.org/releases/artifacts/ohNetGenerated/ohNetGenerated-${version}-Windows10-x86-Release.tar.gz",
+      "dest": "dependencies/Windows10/ohNetGenerated",
       "strip-archive-dirs":1
     }
 ]
