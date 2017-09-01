@@ -12,8 +12,8 @@
     <copyright>Copyright 2015</copyright>
   </metadata>
   <files>
-    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/Dv*.net.dll" target="lib/portable-net45+wpa81+wp8" />
-    <file src="dependencies/Windows10/ohNetGenerated/lib/Dv*.net.dll" target="lib/portable-netcore45" />
+    <file src="dependencies/AnyPlatform/ohNetGenerated/lib/Dv*.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/Windows10/ohNetGenerated/lib/Dv*.net.dll" target="lib/uap10.0" />
   </files>
 </package>
 

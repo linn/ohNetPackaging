@@ -15,5 +15,6 @@
     <file src="dependencies/ios/x86/ohNet/lib/ohNet.net.dll" target="lib/MonoTouch10" />
     <file src="dependencies/ios/x86/ohNet/lib/ohNet.net.dll" target="lib/xamarinios10" />
     <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
+    <file src="dependencies/windows10/x86/ohNet/lib/ohNet.net.dll" target="lib/uap10.0" />
   </files>
 </package>
