@@ -6,10 +6,11 @@
     <title>ohNet UPnP Stack Bindings</title>
     <authors>OpenHome</authors>
     <owners>OpenHome</owners>
+    <licenseUrl>https://raw.githubusercontent.com/openhome/ohNet/master/MitLicense.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.NET bindings to ohNet UPnP Stack</description>
-    <releaseNotes>first nuget release</releaseNotes>
-    <copyright>Copyright 2015</copyright>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
   </metadata>
   <files>
     <file src="dependencies/ios/x86/ohNet/lib/ohNet.net.dll" target="lib/MonoTouch10" />

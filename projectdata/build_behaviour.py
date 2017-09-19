@@ -20,7 +20,7 @@ class Builder(OpenHomeBuilder):
     build_dir = "build"
 
     def setup(self):
-        self.nuget_server = self.env.get('NUGET_SERVER')
+        self.nuget_api_key = self.env.get('NUGET_API_KEY')
 		
         # write release version in dependencies.json
         f1 = open('projectdata/dependencies.json', 'r')
@@ -51,4 +51,4 @@ class Builder(OpenHomeBuilder):
         self.pack_nuget('src/ohNetGeneratedProviders.nuspec', '.')
 
     def publish(self):
-        self.publish_package_curl(os.path.join('build', 'packages', '*.nupkg'), self.nuget_server)
+        self.publish_nuget(os.path.join('build', 'packages', '*.nupkg'), "-ApiKey %s" % self.nuget_api_key)

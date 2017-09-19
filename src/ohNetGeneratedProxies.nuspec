@@ -6,10 +6,11 @@
     <title>ohNetGenerated Proxies</title>
     <authors>OpenHome</authors>
     <owners>OpenHome</owners>
+    <licenseUrl>https://raw.githubusercontent.com/openhome/ohNet/master/MitLicense.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Classes for interacting with common UPnP services</description>
-    <releaseNotes>first nuget release</releaseNotes>
-    <copyright>Copyright 2015</copyright>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
   </metadata>
   <files>
     <file src="dependencies/AnyPlatform/ohNetGenerated/lib/Cp*.net.dll" target="lib/portable-net45+netcore45+wpa81+wp8" />
