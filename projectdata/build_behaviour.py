@@ -51,4 +51,4 @@ class Builder(OpenHomeBuilder):
         self.pack_nuget('src/ohNetGeneratedProviders.nuspec', '.')
 
     def publish(self):
-        self.publish_nuget(os.path.join('build', 'packages', '*.nupkg'), "-ApiKey %s" % self.nuget_api_key)
+        self.publish_nuget(os.path.join('build', 'packages', '*.nupkg'), self.nuget_api_key)
