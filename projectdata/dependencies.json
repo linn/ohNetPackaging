@@ -70,6 +70,13 @@
       "strip-archive-dirs":1
     },
     {
+      "name": "ohNet-ios-x64",
+      "version": "%(ohnet_version)s",
+      "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-iOs-x64-Release.tar.gz",
+      "dest": "dependencies/ios/x64/ohNet",
+      "strip-archive-dirs":1
+    },
+    {
       "name": "ohNet-ios-armv7",
       "version": "%(ohnet_version)s",
       "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-iOs-armv7-Release.tar.gz",
