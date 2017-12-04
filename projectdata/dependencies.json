@@ -21,10 +21,10 @@
       "strip-archive-dirs":1
     },
     {
-      "name": "ohNet-linux-armhf",
+      "name": "ohNet-linux-rpi",
       "version": "%(ohnet_version)s",
-      "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Linux-armhf-Release.tar.gz",
-      "dest": "dependencies/linux/armhf/ohNet",
+      "archive-path":"http://builds.openhome.org/releases/artifacts/ohNet/ohNet-${version}-Linux-rpi-Release.tar.gz",
+      "dest": "dependencies/linux/rpi/ohNet",
       "strip-archive-dirs":1
     },
     {

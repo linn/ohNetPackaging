@@ -35,12 +35,12 @@
         Qnap-x86 -> qnap/x86
         Qnap-x19 -> qnap/x19
         Qnap-x19 -> qnap/x31
-        Linux-armhf -> qnap/x41 
+        Linux-rpi -> qnap/x41 
     -->
     <file src="dependencies/qnap/x86/ohNet/lib/libohNet.so" target="ohNet/qnap/x86" />
     <file src="dependencies/qnap/x19/ohNet/lib/libohNet.so" target="ohNet/qnap/x19" />
     <file src="dependencies/qnap/x19/ohNet/lib/libohNet.so" target="ohNet/qnap/x31" /> 
-    <file src="dependencies/linux/armhf/ohNet/lib/libohNet.so" target="ohNet/qnap/x41" />
+    <file src="dependencies/linux/rpi/ohNet/lib/libohNet.so" target="ohNet/qnap/x41" />
     <file src="src/targets/Mono/ohNet.targets" target="build/Mono10" />
 
     <file src="src/targets/Qnap/x86/ohNet.targets" target="build/qnap/x86" />
