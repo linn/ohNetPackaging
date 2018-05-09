@@ -2,133 +2,133 @@
     {
       "name": "ohNet-windows-x86",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows-x86-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Windows-x86-Release.tar.gz",
       "dest": "dependencies/windows/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-linux-x86",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Linux-x86-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Linux-x86-Release.tar.gz",
       "dest": "dependencies/linux/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-linux-x64",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Linux-x64-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Linux-x64-Release.tar.gz",
       "dest": "dependencies/linux/x64/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-linux-rpi",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Linux-rpi-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Linux-rpi-Release.tar.gz",
       "dest": "dependencies/linux/rpi/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-qnap-x86",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Qnap-x86-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Qnap-x86-Release.tar.gz",
       "dest": "dependencies/qnap/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-qnap-x19",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Qnap-x19-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Qnap-x19-Release.tar.gz",
       "dest": "dependencies/qnap/x19/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-android-anycpu",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Android-anycpu-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Android-anycpu-Release.tar.gz",
       "dest": "dependencies/android/anycpu/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-mac-x86",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Mac-x86-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Mac-x86-Release.tar.gz",
       "dest": "dependencies/mac/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-mac-x64",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Mac-x64-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Mac-x64-Release.tar.gz",
       "dest": "dependencies/mac/x64/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-ios-x86",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-iOs-x86-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-iOs-x86-Release.tar.gz",
       "dest": "dependencies/ios/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-ios-x64",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-iOs-x64-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-iOs-x64-Release.tar.gz",
       "dest": "dependencies/ios/x64/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-ios-armv7",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-iOs-armv7-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-iOs-armv7-Release.tar.gz",
       "dest": "dependencies/ios/armv7/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-ios-arm64",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-iOs-arm64-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-iOs-arm64-Release.tar.gz",
       "dest": "dependencies/ios/arm64/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-windows81-x86",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows81-x86-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Windows81-x86-Release.tar.gz",
       "dest": "dependencies/windows81/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-windows81-x64",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows81-x64-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Windows81-x64-Release.tar.gz",
       "dest": "dependencies/windows81/x64/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-windows81-arm",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows81-arm-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Windows81-arm-Release.tar.gz",
       "dest": "dependencies/windows81/arm/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-windows10-x86",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows10-x86-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Windows10-x86-Release.tar.gz",
       "dest": "dependencies/windows10/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-windows10-x64",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows10-x64-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Windows10-x64-Release.tar.gz",
       "dest": "dependencies/windows10/x64/ohNet",
       "strip-archive-dirs":1
     },
     {
       "name": "ohNet-windows10-arm",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows10-arm-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohnet/ohNet-${version}-Windows10-arm-Release.tar.gz",
       "dest": "dependencies/windows10/arm/ohNet",
       "strip-archive-dirs":1
     },
