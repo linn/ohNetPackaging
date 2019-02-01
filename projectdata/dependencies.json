@@ -21,6 +21,13 @@
       "strip-archive-dirs":1
     },
     {
+      "name": "ohNet-linux-arm64",
+      "version": "%(ohnet_version)s",
+      "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Linux-arm64-Release.tar.gz",
+      "dest": "dependencies/linux/arm64/ohNet",
+      "strip-archive-dirs":1
+    },
+    {
       "name": "ohNet-linux-rpi",
       "version": "%(ohnet_version)s",
       "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Linux-rpi-Release.tar.gz",
