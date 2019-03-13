@@ -19,5 +19,15 @@
       <Abi>armeabi-v7a</Abi>
       <DeployService-Deploy>True</DeployService-Deploy>
     </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(ohNetLibDir)x86_64\libohNet.so">
+      <Link>libohNet.so</Link>
+      <Abi>x86_64</Abi>
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(ohNetLibDir)arm64-v8a\libohNet.so">
+      <Link>libohNet.so</Link>
+      <Abi>arm64-v8a</Abi>
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </AndroidNativeLibrary>
   </ItemGroup>
 </Project>
