@@ -28,13 +28,6 @@
       "strip-archive-dirs":1
     },
     {
-      "name": "ohNet-linux-rpi",
-      "version": "%(ohnet_version)s",
-      "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Linux-rpi-Release.tar.gz",
-      "dest": "dependencies/linux/rpi/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
       "name": "ohNet-qnap-x19",
       "version": "%(ohnet_version)s",
       "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Qnap-x19-Release.tar.gz",
@@ -46,13 +39,6 @@
       "version": "%(ohnet_version)s",
       "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Android-anycpu-Release.tar.gz",
       "dest": "dependencies/android/anycpu/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
-      "name": "ohNet-mac-x86",
-      "version": "%(ohnet_version)s",
-      "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Mac-x86-Release.tar.gz",
-      "dest": "dependencies/mac/x86/ohNet",
       "strip-archive-dirs":1
     },
     {
@@ -88,27 +74,6 @@
       "version": "%(ohnet_version)s",
       "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-iOs-arm64-Release.tar.gz",
       "dest": "dependencies/ios/arm64/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
-      "name": "ohNet-windows81-x86",
-      "version": "%(ohnet_version)s",
-      "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Windows81-x86-Release.tar.gz",
-      "dest": "dependencies/windows81/x86/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
-      "name": "ohNet-windows81-x64",
-      "version": "%(ohnet_version)s",
-      "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Windows81-x64-Release.tar.gz",
-      "dest": "dependencies/windows81/x64/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
-      "name": "ohNet-windows81-arm",
-      "version": "%(ohnet_version)s",
-      "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Windows81-arm-Release.tar.gz",
-      "dest": "dependencies/windows81/arm/ohNet",
       "strip-archive-dirs":1
     },
     {
