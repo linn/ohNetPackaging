@@ -32,13 +32,13 @@
         ohnet dependencies intentionally mapped as follows for .NET consumption on qnap: 
         Qnap-x19 -> qnap/x19
         Qnap-x19 -> qnap/x31
-        Linux-rpi -> qnap/x41 
+        Qnap-x19 -> qnap/x41 (Linux-rpi no longer built)
         Linux-arm64 -> qnap/arm64 
         Linux-x64 -> qnap/x64
     -->
     <file src="dependencies/qnap/x19/ohNet/lib/libohNet.so" target="ohNet/qnap/x19" />
     <file src="dependencies/qnap/x19/ohNet/lib/libohNet.so" target="ohNet/qnap/x31" /> 
-    <file src="dependencies/linux/rpi/ohNet/lib/libohNet.so" target="ohNet/qnap/x41" />
+    <file src="dependencies/qnap/x19/ohNet/lib/libohNet.so" target="ohNet/qnap/x41" />
     <file src="dependencies/linux/arm64/ohNet/lib/libohNet.so" target="ohNet/qnap/arm64" />
     <file src="dependencies/linux/x64/ohNet/lib/libohNet.so" target="ohNet/qnap/x64" />
     <file src="src/targets/Mono/ohNet.targets" target="build/Mono10" />
