@@ -59,6 +59,7 @@ class Builder(OpenHomeBuilder):
         self.pack_nuget('src/ohNetGeneratedProxies.nuspec', '.')
         self.pack_nuget('src/ohNetGeneratedProviders.nuspec', '.')
         self.pack_nuget('src/ohNetGeneratedProxies.Combined.nuspec', '.')
+        self.pack_nuget('src/ohNetGeneratedProviders.Combined.nuspec', '.')
 
     def publish(self):
         self.publish_nuget(os.path.join('build', 'packages', '*.nupkg'), self.nuget_api_key, 'https://api.nuget.org/v3/index.json')
