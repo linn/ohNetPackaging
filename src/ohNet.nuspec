@@ -30,23 +30,13 @@
     <file src="dependencies/linux/arm64/ohNet/lib/libohNet.so" target="ohNet/mono/arm64" />
     <!-- 
         ohnet dependencies intentionally mapped as follows for .NET consumption on qnap: 
-        Qnap-x19 -> qnap/x19
-        Qnap-x19 -> qnap/x31
-        Qnap-x19 -> qnap/x41 (Linux-rpi no longer built)
         Linux-arm64 -> qnap/arm64 
         Linux-x64 -> qnap/x64
     -->
-    <file src="dependencies/qnap/x19/ohNet/lib/libohNet.so" target="ohNet/qnap/x19" />
-    <file src="dependencies/qnap/x19/ohNet/lib/libohNet.so" target="ohNet/qnap/x31" /> 
-    <file src="dependencies/qnap/x19/ohNet/lib/libohNet.so" target="ohNet/qnap/x41" />
     <file src="dependencies/linux/arm64/ohNet/lib/libohNet.so" target="ohNet/qnap/arm64" />
     <file src="dependencies/linux/x64/ohNet/lib/libohNet.so" target="ohNet/qnap/x64" />
     <file src="src/targets/Mono/ohNet.targets" target="build/Mono10" />
 
-    <file src="src/targets/Qnap/x19/ohNet.targets" target="build/qnap/x19" />
-    <file src="src/targets/Qnap/x31/ohNet.targets" target="build/qnap/x31" />
-    <file src="src/targets/Qnap/x41/ohNet.targets" target="build/qnap/x41" />
-    
     <file src="dependencies/mac/x64/ohNet/lib/libohNet.dylib" target="ohNet/Xamarin.Mac/x64" />
     <file src="src/targets/Xamarin.Mac/ohNet.targets" target="build/Xamarin.Mac20" />
     
