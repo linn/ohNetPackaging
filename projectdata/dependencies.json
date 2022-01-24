@@ -28,6 +28,13 @@
       "strip-archive-dirs":1
     },
     {
+      "name": "ohNet-linux-armhf",
+      "version": "%(ohnet_version)s",
+      "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Linux-armhf-Release.tar.gz",
+      "dest": "dependencies/linux/armhf/ohNet",
+      "strip-archive-dirs":1
+    },
+    {
       "name": "ohNet-android-anycpu",
       "version": "%(ohnet_version)s",
       "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-Android-anycpu-Release.tar.gz",

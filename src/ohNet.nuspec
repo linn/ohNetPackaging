@@ -28,6 +28,7 @@
     <file src="dependencies/linux/x86/ohNet/lib/libohNet.so" target="ohNet/mono/x86" />
     <file src="dependencies/linux/x64/ohNet/lib/libohNet.so" target="ohNet/mono/x64" />
     <file src="dependencies/linux/arm64/ohNet/lib/libohNet.so" target="ohNet/mono/arm64" />
+    <file src="dependencies/linux/armhf/ohNet/lib/libohNet.so" target="ohNet/mono/armhf" />
     <!-- 
         ohnet dependencies intentionally mapped as follows for .NET consumption on qnap: 
         Linux-arm64 -> qnap/arm64 
