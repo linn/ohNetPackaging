@@ -49,24 +49,10 @@
       "strip-archive-dirs":1
     },
     {
-      "name": "ohNet-ios-x86",
-      "version": "%(ohnet_version)s",
-      "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-iOs-x86-Release.tar.gz",
-      "dest": "dependencies/ios/x86/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
       "name": "ohNet-ios-x64",
       "version": "%(ohnet_version)s",
       "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-iOs-x64-Release.tar.gz",
       "dest": "dependencies/ios/x64/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
-      "name": "ohNet-ios-armv7",
-      "version": "%(ohnet_version)s",
-      "archive-path":"https://linn-artifacts-public.s3-eu-west-1.amazonaws.com/artifacts/ohNet/ohNet-${version}-iOs-armv7-Release.tar.gz",
-      "dest": "dependencies/ios/armv7/ohNet",
       "strip-archive-dirs":1
     },
     {

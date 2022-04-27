@@ -36,24 +36,6 @@ class Builder(OpenHomeBuilder):
             shutil.rmtree(self.build_dir)
 
     def build(self):
-        os.makedirs(self.build_dir)
-        os.makedirs(self.output_dir)
-        iosFatBinaryDir = os.path.join(self.build_dir, 'ios/arm-universal/ohNet/lib')
-        os.makedirs(iosFatBinaryDir)
-        architectures = ['armv7', 'arm64']
-        archives = str.join(" ", ["./dependencies/ios/%s/ohNet/lib/libohNetCore.a" % (a) for a in architectures])
-        libtoolcmd = "/usr/bin/libtool -static %s -o \"%s/libohNetCore.a\"" % (archives, iosFatBinaryDir)
-        print libtoolcmd
-        subprocess.check_call(libtoolcmd, cwd=os.getcwd(), shell=True)
-
-        iosFatBinaryDir = os.path.join(self.build_dir, 'ios/x86-universal/ohNet/lib')
-        os.makedirs(iosFatBinaryDir)
-        architectures = ['x86', 'x64']
-        archives = str.join(" ", ["./dependencies/ios/%s/ohNet/lib/libohNetCore.a" % (a) for a in architectures])
-        libtoolcmd = "/usr/bin/libtool -static %s -o \"%s/libohNetCore.a\"" % (archives, iosFatBinaryDir)
-        print libtoolcmd
-        subprocess.check_call(libtoolcmd, cwd=os.getcwd(), shell=True)
-
         self.pack_nuget('src/ohNet.nuspec', '.')
         self.pack_nuget('src/ohNet.NET.nuspec', '.')
         self.pack_nuget('src/ohNetGeneratedProxies.nuspec', '.')
