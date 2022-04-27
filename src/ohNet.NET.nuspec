@@ -13,8 +13,8 @@
     <copyright>Copyright 2017</copyright>
   </metadata>
   <files>
-    <file src="dependencies/ios/x86/ohNet/lib/ohNet.net.dll" target="lib/MonoTouch10" />
-    <file src="dependencies/ios/x86/ohNet/lib/ohNet.net.dll" target="lib/xamarinios10" />
+    <file src="dependencies/ios/x64/ohNet/lib/ohNet.net.dll" target="lib/MonoTouch10" />
+    <file src="dependencies/ios/x64/ohNet/lib/ohNet.net.dll" target="lib/xamarinios10" />
     <file src="dependencies/windows/x86/ohNet/lib/ohNet.net.dll" target="lib/netstandard2.0" />
     <file src="dependencies/windows10/x86/ohNet/lib/ohNet.net.dll" target="lib/uap10.0" />
   </files>
