@@ -48,8 +48,8 @@
     <file src="src/targets/MonoAndroid/ohNet.targets" target="build/MonoAndroid10" />
     <file src="src/targets/MonoAndroid/ohNet.targets" target="build/Xamarin.Android10" />
     
-    <file src="build/ios/x86-universal/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/x86-universal" />
-    <file src="build/ios/arm-universal/ohNet/lib/libohNetCore.a" target="ohNet/MonoTouch/arm-universal" />
+    <file src="dependencies/ios/x64/ohNet/lib/libohNet.a" target="ohNet/MonoTouch/x86_x64" />
+    <file src="dependencies/ios/arm64/ohNet/lib/libohNet.a" target="ohNet/MonoTouch/arm64" />
     <file src="src/targets/MonoTouch/ohNet.targets" target="build/MonoTouch10" />
     <file src="src/targets/MonoTouch/ohNet.targets" target="build/Xamarin.iOS10" />
   </files>
