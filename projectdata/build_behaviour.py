@@ -74,8 +74,10 @@ class Builder(OpenHomeBuilder):
     def build(self):
         self.pack_nuget('src/ohNet.nuspec', '.')
         self.pack_nuget('src/ohNet.NET.nuspec', '.')
-        self.pack_nuget('src/ohNetGeneratedProxies.nuspec', '.')
-        self.pack_nuget('src/ohNetGeneratedProviders.nuspec', '.')
+        # NOTE: The multi-DLL packages are no longer build and published as we don't consume them. Can be re-enabled if this suddenly becomes a requirement
+        print('NOTE: multi-DLL packages for proxies & providers are no longer built.')
+        #self.pack_nuget('src/ohNetGeneratedProxies.nuspec', '.')
+        #self.pack_nuget('src/ohNetGeneratedProviders.nuspec', '.')
         self.pack_nuget('src/ohNetGeneratedProxies.Combined.nuspec', '.')
         self.pack_nuget('src/ohNetGeneratedProviders.Combined.nuspec', '.')
 

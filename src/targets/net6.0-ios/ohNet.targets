@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"> 
   <PropertyGroup Condition=" '$(Platform)' == 'iPhoneSimulator' ">
-    <ohnetDir>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/x86_x64l/</ohnetDir>
+    <ohnetDir>$(MSBuildThisFileDirectory)../../runtimes/iossimulator-x64/native/</ohnetDir>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'iPhone' ">
-    <ohnetDir>$(MSBuildThisFileDirectory)../../ohNet/MonoTouch/arm64/</ohnetDir>
+    <ohnetDir>$(MSBuildThisFileDirectory)../../runtimes/ios-arm64/native/</ohnetDir>
   </PropertyGroup>
   <PropertyGroup>
-    <ohNetGccFlags>-stdlib=libstdc++ -L$(ohnetDir) -lohNetCore -force_load $(ohnetDir)libohNet.a</ohNetGccFlags>
+    <ohNetGccFlags>-L$(ohnetDir) -lohNetCore -force_load $(ohnetDir)libohNetCore.a</ohNetGccFlags>
     <ohNetArgs>-cxx -gcc_flags "$(ohNetGccFlags)"</ohNetArgs>
   </PropertyGroup>
   
