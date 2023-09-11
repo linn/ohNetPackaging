@@ -13,15 +13,10 @@
     <copyright>Copyright 2017</copyright>
   </metadata>
   <files>
-    <file src="dependencies/ios/x64/ohNet/ohNet-iOS-x64-Release/lib/ohNet.net.dll" target="lib/net6.0-ios" />
-
-    <!-- NOTE: We use a Linux copy of the ohNet.NET library here because it's correctly targetting 'Any CPU' which is required.
-               dotnet build on Windows currently ignores the 'Platform' target and explicitly sets it as the same arch the build
-               was run from.... -->
-    <file src="dependencies/linux/x86/ohNet/ohNet-Linux-x86-Release/lib/ohNet.net.dll" target="lib/net6.0" />
-    <file src="dependencies/linux/x86/ohNet/ohNet-Linux-x86-Release/lib/ohNet.net.dll" target="lib/netstandard2.0" />
-    <file src="dependencies/linux/x86/ohNet/ohNet-Linux-x86-Release/lib/ohNet.net.dll" target="lib/netstandard1.1" />
-
+    <file src="dependencies/ios/x64/ohNet/ohNet-iOS-x64-Release/lib/ohNet.net.dll" target="lib/MonoTouch10" />
+    <file src="dependencies/ios/x64/ohNet/ohNet-iOS-x64-Release/lib/ohNet.net.dll" target="lib/xamarinios10" />
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.net.dll" target="lib/netstandard2.0" />
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.net.dll" target="lib/netstandard1.1" />
     <file src="dependencies/windows10/x86/ohNet/ohNet-Windows10-x86-Release/lib/ohNet.net.dll" target="lib/uap10.0" />
   </files>
 </package>
