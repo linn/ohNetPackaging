@@ -41,16 +41,20 @@
     <file src="dependencies/mac/x64/ohNet/ohNet-Mac-x64-Release/lib/libohNet.dylib" target="ohNet/Xamarin.Mac/x64" />
     <file src="src/targets/Xamarin.Mac/ohNet.targets" target="build/Xamarin.Mac20" />
     
-    <file src="dependencies/android/anycpu/ohNet/ohNet-Android-anycpu-Release/lib/armeabi-v7a/libohNet.so" target="ohNet/MonoAndroid/armeabi-v7a" />
-    <file src="dependencies/android/anycpu/ohNet/ohNet-Android-anycpu-Release/lib/x86/libohNet.so" target="ohNet/MonoAndroid/x86" />
-    <file src="dependencies/android/anycpu/ohNet/ohNet-Android-anycpu-Release/lib/x86_64/libohNet.so" target="ohNet/MonoAndroid/x86_64" />
-    <file src="dependencies/android/anycpu/ohNet/ohNet-Android-anycpu-Release/lib/arm64-v8a/libohNet.so" target="ohNet/MonoAndroid/arm64-v8a" />
-    <file src="src/targets/MonoAndroid/ohNet.targets" target="build/MonoAndroid10" />
-    <file src="src/targets/MonoAndroid/ohNet.targets" target="build/Xamarin.Android10" />
-    
-    <file src="dependencies/ios/x64/ohNet/ohNet-iOS-x64-Release/lib/libohNetCore.a" target="ohNet/MonoTouch/x86_x64" />
-    <file src="dependencies/ios/arm64/ohNet/ohNet-iOS-arm64-Release/lib/libohNetCore.a" target="ohNet/MonoTouch/arm64" />
-    <file src="src/targets/MonoTouch/ohNet.targets" target="build/MonoTouch10" />
-    <file src="src/targets/MonoTouch/ohNet.targets" target="build/Xamarin.iOS10" />
+    <!-- Android libs are now put in the required lib/ sub-directory for .NET6.0+. In theory, I think this also means we can remove the need for
+         us to provide a .targets file on this platform -->
+    <file src="dependencies/android/anycpu/ohNet/ohNet-Android-anycpu-Release/lib/armeabi-v7a/libohNet.so" target="runtimes/android-arm/native" />
+    <file src="dependencies/android/anycpu/ohNet/ohNet-Android-anycpu-Release/lib/x86/libohNet.so" target="runtimes/android-x86/native" />
+    <file src="dependencies/android/anycpu/ohNet/ohNet-Android-anycpu-Release/lib/x86_64/libohNet.so" target="runtimes/android-x64/native" />
+    <file src="dependencies/android/anycpu/ohNet/ohNet-Android-anycpu-Release/lib/arm64-v8a/libohNet.so" target="runtimes/android-arm64/native" />
+
+    <file src="src/targets/net6.0-android/ohNet.targets" target="build/net6.0-android" />
+
+    <!-- iOS libs are now put in the requierd lib/ sub-directory for .NET6.0+. This allows us to have all the ohNet args provided in the .targets file
+         which means the csproj no longer has to invoke everything directly -->
+    <file src="dependencies/ios/x64/ohNet/ohNet-iOS-x64-Release/lib/libohNetCore.a" target="runtimes/iossimulator-x64/native" />
+    <file src="dependencies/ios/arm64/ohNet/ohNet-iOS-arm64-Release/lib/libohNetCore.a" target="runtimes/ios-arm64/native" />
+
+    <file src="src/targets/net6.0-ios/ohNet.targets" target="build/net6.0-ios" />
   </files>
 </package>
