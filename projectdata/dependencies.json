@@ -75,5 +75,5 @@
       "archive-path": "s3://linn-artifacts-public/artifacts/ohNetGenerated/ohNetGenerated-${version}-AnyPlatform-Release.tar.gz",
       "dest": "dependencies/AnyPlatform/ohNetGenerated",
       "strip-archive-dirs":1
-    },
+    }
 ]
