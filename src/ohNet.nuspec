@@ -15,6 +15,7 @@
   <files>
     <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="ohNet/net40/AnyCPU" />
     <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="ohNet/net40/x86" />
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x64-Release/lib/ohNet.dll" target="ohNet/net40/x64" />
     <file src="src/targets/net40/ohNet.targets" target="build/net40" />
 
     <file src="src/targets/netcore45/ohNet.targets" target="build/netcore45" />
