@@ -63,38 +63,10 @@
       "strip-archive-dirs":1
     },
     {
-      "name": "ohNet-windows10-x86",
-      "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows10-x86-Release.tar.gz",
-      "dest": "dependencies/windows10/x86/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
-      "name": "ohNet-windows10-x64",
-      "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows10-x64-Release.tar.gz",
-      "dest": "dependencies/windows10/x64/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
-      "name": "ohNet-windows10-arm",
-      "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Windows10-arm-Release.tar.gz",
-      "dest": "dependencies/windows10/arm/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
       "name": "ohNetGenerated",
       "version": "%(ohnet_generated_version)s",
       "archive-path": "s3://linn-artifacts-public/artifacts/ohNetGenerated/ohNetGenerated-${version}-AnyPlatform-Release.tar.gz",
       "dest": "dependencies/AnyPlatform/ohNetGenerated",
       "strip-archive-dirs":1
     },
-    {
-      "name": "ohNetGenerated-Windows10",
-      "version": "%(ohnet_generated_version)s",
-      "archive-path": "s3://linn-artifacts-public/artifacts/ohNetGenerated/ohNetGenerated-${version}-Windows10-x86-Release.tar.gz",
-      "dest": "dependencies/Windows10/ohNetGenerated",
-      "strip-archive-dirs":1
-    }
 ]

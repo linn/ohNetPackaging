@@ -15,7 +15,6 @@
   <files>
     <file src="dependencies\AnyPlatform\ohNetGenerated\ohNetGenerated-AnyPlatform-Release\lib\Dv*.net.dll" target="lib/netstandard2.0" />
     <file src="dependencies\AnyPlatform\ohNetGenerated\ohNetGenerated-AnyPlatform-Release\lib\Dv*.net.dll" target="lib/netstandard1.1" />
-    <file src="dependencies\Windows10\ohNetGenerated\ohNetGenerated-Windows10-x86-Release\lib\Dv*.net.dll" target="lib/uap10.0" />
   </files>
 </package>
 
