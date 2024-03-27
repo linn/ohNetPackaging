@@ -18,6 +18,11 @@
     <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x64-Release/lib/ohNet.dll" target="ohNet/net40/x64" />
     <file src="src/targets/net40/ohNet.targets" target="build/net40" />
 
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="ohNet/net462/AnyCPU" />
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="ohNet/net462/x86" />
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x64-Release/lib/ohNet.dll" target="ohNet/net462/x64" />
+    <file src="src/targets/net462/ohNet.targets" target="build/net462" />
+
     <file src="dependencies/linux/x86/ohNet/ohNet-Linux-x86-Release/lib/libohNet.so" target="ohNet/mono/AnyCPU" />
     <file src="dependencies/linux/x86/ohNet/ohNet-Linux-x86-Release/lib/libohNet.so" target="ohNet/mono/x86" />
     <file src="dependencies/linux/x64/ohNet/ohNet-Linux-x64-Release/lib/libohNet.so" target="ohNet/mono/x64" />
