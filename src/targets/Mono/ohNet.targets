@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Target Name="OhNetMonoCopy" BeforeTargets="AfterBuild">
     <PropertyGroup>
-      <libOhNetPath>$(MSBuildThisFileDirectory)..\..\ohNet\mono\$(Platform)\libohNet.so</libOhNetPath>
+      <libOhNetPath>$(MSBuildThisFileDirectory)..\..\lib\mono\$(Platform)\libohNet.so</libOhNetPath>
     </PropertyGroup>
     <Message Importance="high" Text="-- ohNet.targets: Copying $(libOhNetPath) to $(TargetDir)" />
     <Copy SourceFiles="$(libOhNetPath)" DestinationFolder="$(TargetDir)" />

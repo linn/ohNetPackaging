@@ -3,7 +3,7 @@
   <ItemGroup>
     <Reference Remove="ohNet.net.dll" />
     <Reference Include="ohNet.net.dll">
-      <HintPath>$(MSBuildThisFileDirectory)..\..\ohNet\mono\$(Platform)\ohNet.net.dll</HintPath>
+      <HintPath>$(MSBuildThisFileDirectory)..\..\lib\mono\$(Platform)\ohNet.net.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

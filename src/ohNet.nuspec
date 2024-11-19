@@ -13,28 +13,28 @@
     <copyright>Copyright 2017</copyright>
   </metadata>
   <files>
-    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="ohNet/net40/AnyCPU" />
-    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="ohNet/net40/x86" />
-    <file src="dependencies/windows/x64/ohNet/ohNet-Windows-x64-Release/lib/ohNet.dll" target="ohNet/net40/x64" />
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="lib/net40/AnyCPU" />
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="lib/net40/x86" />
+    <file src="dependencies/windows/x64/ohNet/ohNet-Windows-x64-Release/lib/ohNet.dll" target="lib/net40/x64" />
     <file src="src/targets/net40/ohNet.targets" target="build/net40" />
 
-    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="ohNet/net462/AnyCPU" />
-    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="ohNet/net462/x86" />
-    <file src="dependencies/windows/x64/ohNet/ohNet-Windows-x64-Release/lib/ohNet.dll" target="ohNet/net462/x64" />
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="lib/net462/AnyCPU" />
+    <file src="dependencies/windows/x86/ohNet/ohNet-Windows-x86-Release/lib/ohNet.dll" target="lib/net462/x86" />
+    <file src="dependencies/windows/x64/ohNet/ohNet-Windows-x64-Release/lib/ohNet.dll" target="lib/net462/x64" />
     <file src="src/targets/net462/ohNet.targets" target="build/net462" />
 
-    <file src="dependencies/linux/x86/ohNet/ohNet-Linux-x86-Release/lib/libohNet.so" target="ohNet/mono/AnyCPU" />
-    <file src="dependencies/linux/x86/ohNet/ohNet-Linux-x86-Release/lib/libohNet.so" target="ohNet/mono/x86" />
-    <file src="dependencies/linux/x64/ohNet/ohNet-Linux-x64-Release/lib/libohNet.so" target="ohNet/mono/x64" />
-    <file src="dependencies/linux/arm64/ohNet/ohNet-Linux-arm64-Release/lib/libohNet.so" target="ohNet/mono/arm64" />
-    <file src="dependencies/linux/armhf/ohNet/ohNet-Linux-armhf-Release/lib/libohNet.so" target="ohNet/mono/armhf" />
+    <file src="dependencies/linux/x86/ohNet/ohNet-Linux-x86-Release/lib/libohNet.so" target="lib/mono/AnyCPU" />
+    <file src="dependencies/linux/x86/ohNet/ohNet-Linux-x86-Release/lib/libohNet.so" target="lib/mono/x86" />
+    <file src="dependencies/linux/x64/ohNet/ohNet-Linux-x64-Release/lib/libohNet.so" target="lib/mono/x64" />
+    <file src="dependencies/linux/arm64/ohNet/ohNet-Linux-arm64-Release/lib/libohNet.so" target="lib/mono/arm64" />
+    <file src="dependencies/linux/armhf/ohNet/ohNet-Linux-armhf-Release/lib/libohNet.so" target="lib/mono/armhf" />
     <!-- 
         ohnet dependencies intentionally mapped as follows for .NET consumption on qnap: 
         Linux-arm64 -> qnap/arm64 
         Linux-x64 -> qnap/x64
     -->
-    <file src="dependencies/linux/arm64/ohNet/ohNet-Linux-arm64-Release/lib/libohNet.so" target="ohNet/qnap/arm64" />
-    <file src="dependencies/linux/x64/ohNet/ohNet-Linux-x64-Release/lib/libohNet.so" target="ohNet/qnap/x64" />
+    <file src="dependencies/linux/arm64/ohNet/ohNet-Linux-arm64-Release/lib/libohNet.so" target="lib/qnap/arm64" />
+    <file src="dependencies/linux/x64/ohNet/ohNet-Linux-x64-Release/lib/libohNet.so" target="lib/qnap/x64" />
     <file src="src/targets/Mono/ohNet.targets" target="build/Mono10" />
 
     <file src="dependencies/mac/x64/ohNet/ohNet-Mac-x64-Release/lib/libohNet.dylib" target="ohNet/Xamarin.Mac/x64" />

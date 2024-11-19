@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Target Name="OhNetWinCopy" BeforeTargets="AfterBuild">
     <PropertyGroup>
-      <ohNetDllPath>$(MSBuildThisFileDirectory)..\..\ohNet\net40\$(Platform)\ohNet.dll</ohNetDllPath>
+      <ohNetDllPath>$(MSBuildThisFileDirectory)..\..\lib\net40\$(Platform)\ohNet.dll</ohNetDllPath>
     </PropertyGroup>
     <Message Importance="high" Text="-- ohNet.targets: Copying $(libOhNetPath) to $(TargetDir)" />
     <Copy SourceFiles="$(ohNetDllPath)" DestinationFolder="$(TargetDir)" />
