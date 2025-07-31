@@ -9,7 +9,7 @@ import subprocess
 try:
     from ci import (OpenHomeBuilder, require_version)
 except ImportError:
-    print "You need to update ohDevTools."
+    print("You need to update ohDevTools.")
     sys.exit(1)
 
 require_version(67)
