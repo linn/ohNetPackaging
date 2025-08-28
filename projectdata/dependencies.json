@@ -14,13 +14,6 @@
       "strip-archive-dirs":1
     },
     {
-      "name": "ohNet-linux-x86",
-      "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Linux-x86-Release.tar.gz",
-      "dest": "dependencies/linux/x86/ohNet",
-      "strip-archive-dirs":1
-    },
-    {
       "name": "ohNet-linux-x64",
       "version": "%(ohnet_version)s",
       "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Linux-x64-Release.tar.gz",
