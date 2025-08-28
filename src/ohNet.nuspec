@@ -24,15 +24,8 @@
     <file src="src/targets/net462/ohNet.targets" target="build/net462" />
 
     <file src="dependencies/linux/x64/ohNet/ohNet-Linux-x64-Release/lib/libohNet.so" target="lib/mono/x64" />
-    <file src="dependencies/linux/arm64/ohNet/ohNet-Linux-arm64-Release/lib/libohNet.so" target="lib/mono/arm64" />
-    <file src="dependencies/linux/armhf/ohNet/ohNet-Linux-armhf-Release/lib/libohNet.so" target="lib/mono/armhf" />
-    <!-- 
-        ohnet dependencies intentionally mapped as follows for .NET consumption on qnap: 
-        Linux-arm64 -> qnap/arm64 
-        Linux-x64 -> qnap/x64
-    -->
-    <file src="dependencies/linux/arm64/ohNet/ohNet-Linux-arm64-Release/lib/libohNet.so" target="lib/qnap/arm64" />
-    <file src="dependencies/linux/x64/ohNet/ohNet-Linux-x64-Release/lib/libohNet.so" target="lib/qnap/x64" />
+    <file src="dependencies/linux/arm64/ohNet/ohNet-arrch64-scarthgap-linux-Release/lib/libohNet.so" target="lib/mono/arm64" />
+    <file src="dependencies/linux/armhf/ohNet/ohNet-armhf-buildroot-linux-Release/lib/libohNet.so" target="lib/mono/armhf" />
     <file src="src/targets/Mono/ohNet.targets" target="build/Mono10" />
 
     <file src="dependencies/mac/x64/ohNet/ohNet-Mac-x64-Release/lib/libohNet.dylib" target="ohNet/Xamarin.Mac/x64" />
