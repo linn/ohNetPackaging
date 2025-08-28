@@ -23,7 +23,7 @@
     {
       "name": "ohNet-linux-arm64",
       "version": "%(ohnet_version)s",
-      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Linux-arm64-Release.tar.gz",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-aarch64-scarthgap-linux-Release.tar.gz",
       "dest": "dependencies/linux/arm64/ohNet",
       "strip-archive-dirs":1
     },
