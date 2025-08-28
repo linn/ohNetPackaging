@@ -24,7 +24,7 @@
     <file src="src/targets/net462/ohNet.targets" target="build/net462" />
 
     <file src="dependencies/linux/x64/ohNet/ohNet-Linux-x64-Release/lib/libohNet.so" target="lib/mono/x64" />
-    <file src="dependencies/linux/arm64/ohNet/ohNet-arrch64-scarthgap-linux-Release/lib/libohNet.so" target="lib/mono/arm64" />
+    <file src="dependencies/linux/arm64/ohNet/ohNet-aarch64-scarthgap-linux-Release/lib/libohNet.so" target="lib/mono/arm64" />
     <file src="dependencies/linux/armhf/ohNet/ohNet-armhf-buildroot-linux-Release/lib/libohNet.so" target="lib/mono/armhf" />
     <file src="src/targets/Mono/ohNet.targets" target="build/Mono10" />
 
