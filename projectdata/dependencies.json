@@ -49,6 +49,13 @@
       "strip-archive-dirs":1
     },
     {
+      "name": "ohNet-mac-arm64",
+      "version": "%(ohnet_version)s",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-Mac-arm64-Release.tar.gz",
+      "dest": "dependencies/mac/arm64/ohNet",
+      "strip-archive-dirs":1
+    },
+    {
       "name": "ohNet-ios-x64",
       "version": "%(ohnet_version)s",
       "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-iOs-x64-Release.tar.gz",
@@ -60,6 +67,13 @@
       "version": "%(ohnet_version)s",
       "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-iOs-arm64-Release.tar.gz",
       "dest": "dependencies/ios/arm64/ohNet",
+      "strip-archive-dirs":1
+    },
+    {
+      "name": "ohNet-ios-arm64-sim",
+      "version": "%(ohnet_version)s",
+      "archive-path":"s3://linn-artifacts-public/artifacts/ohNet/ohNet-${version}-iOs-arm64-sim-Release.tar.gz",
+      "dest": "dependencies/ios/arm64-sim/ohNet",
       "strip-archive-dirs":1
     },
     {

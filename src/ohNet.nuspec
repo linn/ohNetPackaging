@@ -40,10 +40,15 @@
 
     <file src="src/targets/net8.0-android/ohNet.targets" target="build/net8.0-android" />
 
+    <!-- Newer Mac are out in the lib/ sub-directory for .NET8.0+ -->
+    <file src="dependencies/mac/x64/ohNet/ohNet-Mac-x64-Release/lib/libohNet.dylib" target="runtimes/osx-64/native" />
+    <file src="dependencies/mac/arm64/ohNet/ohNet-Mac-arm64-Release/lib/libohNet.dylib" target="runtimes/osx-arm64/native" />
+
     <!-- iOS libs are now put in the requierd lib/ sub-directory for .NET6.0+. This allows us to have all the ohNet args provided in the .targets file
          which means the csproj no longer has to invoke everything directly -->
     <file src="dependencies/ios/x64/ohNet/ohNet-iOS-x64-Release/lib/libohNetCore.a" target="runtimes/iossimulator-x64/native" />
     <file src="dependencies/ios/arm64/ohNet/ohNet-iOS-arm64-Release/lib/libohNetCore.a" target="runtimes/ios-arm64/native" />
+    <file src="dependencies/ios/arm64-sim/ohNet/ohNet-iOS-arm64-sim-Release/lib/libohNetCore.a" target="runtimes/iossimulator-arm64/native" />
 
     <file src="src/targets/net8.0-ios/ohNet.targets" target="build/net8.0-ios" />
   </files>
