@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"> 
   <PropertyGroup Condition=" '$(Platform)' == 'iPhoneSimulator' ">
-    <ohnetDir>$(MSBuildThisFileDirectory)../../runtimes/iossimulator-x64/native/</ohnetDir>
+    <ohnetDir>$(MSBuildThisFileDirectory)../../runtimes/iossimulator-arm64/native/</ohnetDir>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'iPhone' ">
     <ohnetDir>$(MSBuildThisFileDirectory)../../runtimes/ios-arm64/native/</ohnetDir>
