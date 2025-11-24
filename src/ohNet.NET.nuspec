@@ -14,6 +14,7 @@
   </metadata>
   <files>
     <file src="dependencies/ios/x64/ohNet/ohNet-iOS-x64-Release/lib/ohNet.net.dll" target="lib/net8.0-ios" />
+    <file src="dependencies/mac/arm64-maccatalyst/ohNet/ohNet-Mac-arm64-catalyst-Release/lib/ohNet.net.dll" target="lib/net8.0-maccatalyst" />
 
     <!-- NOTE: We use a Linux copy of the ohNet.NET library here because it's correctly targetting 'Any CPU' which is required.
                dotnet build on Windows currently ignores the 'Platform' target and explicitly sets it as the same arch the build
