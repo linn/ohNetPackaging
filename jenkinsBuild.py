@@ -5,6 +5,7 @@ sys.path.append(os.path.abspath('ohdevtools'))
 import JenkinsBuildUtils as build
 import shutil
 import subprocess
+import platform
 
 
 class Runner():
@@ -42,7 +43,7 @@ class Runner():
     def pack_nuget(self, project_name, base_path='.', output_path='build/packages'):
         props_str = f'Configuration=Release;version={self.release_version}'
 
-        cmd = ['./nuget/nuget.exe', 'pack', project_name, '-BasePath', base_path, '-Properties', props_str]
+        cmd = ['mono', '--debug', './nuget/nuget.exe', 'pack', project_name, '-BasePath', base_path, '-Properties', props_str]
         if output_path is not None:
             if not os.path.exists(output_path):
                 os.makedirs(output_path)
