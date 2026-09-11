@@ -57,7 +57,7 @@ class Runner():
         subprocess.check_call(cmd)
 
     def publish_nuget(self, package, api_key=None, server=None, config_file='nuget.config'):
-        cmd = ['./nuget/nuget.exe', 'push', package]
+        cmd = ['mono', '--debug', './nuget/nuget.exe', 'push', package]
 
         #nuget can be slow, so set a long timeout (in secs)
         cmd += ['-Timeout', '10000']
