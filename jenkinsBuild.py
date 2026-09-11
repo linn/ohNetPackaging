@@ -95,7 +95,7 @@ if __name__ == '__main__':
         pass
 
     try:
-        publish_release_str = os.environ['PUBLISH_RELEASE'].tolower() == 'true'
+        publish_release = os.environ['PUBLISH_RELEASE'].tolower() == 'true'
     except:
         pass
         
