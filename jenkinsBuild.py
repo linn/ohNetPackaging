@@ -113,7 +113,7 @@ if __name__ == '__main__':
     print(f'ohNet Gen Version: {ohnet_generated_version}')
     print(f'  Release Version: {release_version}')
     print(f'  Publish Release: {publish_release}')
-    print(f'    Nuget API Key: { nuget_api_key != ''}')
-    printf('-------')
+    print(f'    Nuget API Key: present')
+    print('-------')
 
     b = Runner(nuget_api_key, ohnet_version, ohnet_generated_version, release_version, publish_release)
