@@ -11,16 +11,12 @@ class Runner():
     build_dir  = "build"
 
     def __init__(self, nuget_api_key, ohnet_version, ohnet_generated_version, release_version, publish_release):
-        self.nuget_api_key           = nuget_api_key;
-        self.ohnet_version           = ohnet_version;
-        self.ohnet_generated_version = ohnet_generated_version
         self.release_version         = release_version
-        self.publish_release         = publish_release
 
         print('Fetching dependencies...')
          # write release version in dependencies.json
         f1 = open('projectdata/dependencies.json', 'r')
-        c  = f1.read() % {'ohnet_version' : self.env.get('OHNET_VERSION'), 'ohnet_generated_version' : self.env.get('OHNET_GENERATED_VERSION')}
+        c  = f1.read() % {'ohnet_version' : ohnet_version, 'ohnet_generated_version' : ohnet_version}
         f1.close()
         
         f2 = open('projectdata/dependencies.json', 'w')
@@ -40,7 +36,7 @@ class Runner():
         if not publish_release:
             print('NOT PUBLISHING')
         else:
-            self.publish_nuget(os.path.join('build', 'packages', '*.nupkg'), self.nuget_api_key)
+            self.publish_nuget(os.path.join('build', 'packages', '*.nupkg'), nuget_api_key)
 
     def pack_nuget(self, project_name, base_path='.', output_path='build/packages'):
         props_str = f'Configuration=Release;version={self.release_version}'
