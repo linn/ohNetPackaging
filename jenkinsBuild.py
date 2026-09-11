@@ -15,6 +15,9 @@ class Runner():
     def __init__(self, nuget_api_key, ohnet_version, ohnet_generated_version, release_version, publish_release):
         self.release_version         = release_version
 
+        if os.path.isdir(self.build_dir):
+            shutil.rmtree(self.build_dir)
+
         print('Fetching dependencies...')
          # write release version in dependencies.json
         f1 = open('projectdata/dependencies.json', 'r')
