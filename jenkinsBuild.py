@@ -4,7 +4,6 @@ sys.path.append(os.path.abspath('../ohdevtools'))
 sys.path.append(os.path.abspath('ohdevtools'))
 import JenkinsBuildUtils as build
 import shutil
-import testBundler
 
 
 class Runner():
@@ -70,11 +69,43 @@ class Runner():
 
 if __name__ == '__main__':
 
-    nuget_api_key           = self.env.get('NUGET_API_KEY')
-    ohnet_version           = self.env.get('OHNET_VERSION')
-    ohnet_generated_version = self.env.get('OHNET_GENERATED_VERSION')
-    release_version         = self.env.get('RELEASE_VERSION', '0.0.1')
-    publish_release         = self.enf.get('PUBLISH_RELEASE', 'false').tolower() == 'true'
+    nuget_api_key           = ''
+    ohnet_version           = ''
+    ohnet_generated_version = ''
+    release_version         = '0.0.1'
+    publish_release         = 'false'
+
+
+    try:
+        nuget_api_key = os.environ['NUGET_API_KEY']
+    except:
+        pass
+
+    try:
+        ohnet_version           = os.environ['OHNET_VERSION']
+        ohnet_generated_version = os.environ['OHNET_GENERATED_VERSION']
+    except:
+        print('No ohNet version(s) specified')
+        sys.exit(1)
+
+    try:
+        release_version = os.environ['RELEASE_VERSION']
+    except:
+        pass
+
+    try:
+        publish_release = os.environ['PUBLISH_RELEASE']
+    except:
+        pass
+        
+    if not release_version and publish_release:
+        print('Publish specified but no release version')
+        sys.exit(1)
+
+    if not nuget_api_key and publish_release:
+        print('Publish specified but no nuget API key provided')
+        sys.exit(1)
+    
 
     print('Running ohNetPackaging...')
     print('-------')
@@ -84,17 +115,5 @@ if __name__ == '__main__':
     print(f'  Publish Release: {publish_release}')
     print(f'    Nuget API Key: { nuget_api_key != ''}')
     printf('-------')
-
-    if not ohnet_version or not ohnet_generated_version:
-        print('No ohNet versions specified')
-        sys.exit(1)
-
-    if not release_version and publish_release:
-        print('Publish specified but no release version')
-        sys.exit(1)
-
-    if not nuget_api_key and publish_release:
-        print('Publis specified but no nuget API key provided')
-        sys.exit(1)
 
     b = Runner(nuget_api_key, ohnet_version, ohnet_generated_version, release_version, publish_release)
