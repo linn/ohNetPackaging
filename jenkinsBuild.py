@@ -16,7 +16,7 @@ class Runner():
         print('Fetching dependencies...')
          # write release version in dependencies.json
         f1 = open('projectdata/dependencies.json', 'r')
-        c  = f1.read() % {'ohnet_version' : ohnet_version, 'ohnet_generated_version' : ohnet_version}
+        c  = f1.read() % {'ohnet_version' : ohnet_version, 'ohnet_generated_version' : ohnet_generated_version}
         f1.close()
         
         f2 = open('projectdata/dependencies.json', 'w')
