@@ -98,6 +98,7 @@ if __name__ == '__main__':
         publish_release_str = os.environ['PUBLISH_RELEASE']
         print(publish_release_str)
         publish_release     = publish_release_str.tolower() == 'true'
+        print(publish_release)
     except:
         pass
         
