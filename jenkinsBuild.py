@@ -70,7 +70,7 @@ if __name__ == '__main__':
     ohnet_version           = ''
     ohnet_generated_version = ''
     release_version         = '0.0.1'
-    publish_release         = 'false'
+    publish_release         = False
 
 
     try:
@@ -91,7 +91,7 @@ if __name__ == '__main__':
         pass
 
     try:
-        publish_release = os.environ['PUBLISH_RELEASE']
+        publish_release_str = os.environ['PUBLISH_RELEASE'].tolower() == 'true'
     except:
         pass
         
