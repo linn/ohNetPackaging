@@ -116,6 +116,6 @@ if __name__ == '__main__':
     print(f'    Nuget API Key: present')
     print('-------')
 
-    chdir('ohNetPackaging')
+    os.chdir('ohNetPackaging')
 
     b = Runner(nuget_api_key, ohnet_version, ohnet_generated_version, release_version, publish_release)
