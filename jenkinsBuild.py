@@ -13,7 +13,7 @@ class Runner():
     build_dir  = "build"
 
     def __init__(self, nuget_api_key, ohnet_version, ohnet_generated_version, release_version, publish_release):
-        self.release_version         = release_version
+        self.release_version = release_version
 
         if os.path.isdir(self.build_dir):
             shutil.rmtree(self.build_dir)
@@ -56,7 +56,7 @@ class Runner():
         print(f'\n{cmd}')
         subprocess.check_call(cmd)
 
-    def publish_nuget(self, package, api_key=None, server=None, config_file='nuget.config'):
+    def publish_nuget(self, package, api_key):
         cmd = ['mono', '--debug', './nuget/nuget.exe', 'push', package]
 
         #nuget can be slow, so set a long timeout (in secs)
@@ -65,6 +65,10 @@ class Runner():
 
         print(f'Publishing: {package}')
         print(f'\n{cmd}')
+
+        # NOTE adding API Key AFTERWARDS so we don't leak it
+        cmd += [api_key]
+
         subprocess.check_call(cmd)
               
 
