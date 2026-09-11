@@ -1,0 +1,100 @@
+import os
+import sys
+sys.path.append(os.path.abspath('../ohdevtools'))
+sys.path.append(os.path.abspath('ohdevtools'))
+import JenkinsBuildUtils as build
+import shutil
+import testBundler
+
+
+class Runner():
+    output_dir = "build/packages"
+    build_dir  = "build"
+
+    def __init__(self, nuget_api_key, ohnet_version, ohnet_generated_version, release_version, publish_release):
+        self.nuget_api_key           = nuget_api_key;
+        self.ohnet_version           = ohnet_version;
+        self.ohnet_generated_version = ohnet_generated_version
+        self.release_version         = release_version
+        self.publish_release         = publish_release
+
+        print('Fetching dependencies...')
+         # write release version in dependencies.json
+        f1 = open('projectdata/dependencies.json', 'r')
+        c  = f1.read() % {'ohnet_version' : self.env.get('OHNET_VERSION'), 'ohnet_generated_version' : self.env.get('OHNET_GENERATED_VERSION')}
+        f1.close()
+        
+        f2 = open('projectdata/dependencies.json', 'w')
+        f2.write(c)
+        f2.close()
+
+        print('Running go fetch...')
+        build.fetch('--clean --all')
+
+        print('Packaging...')
+        self.pack_nuget('src/ohNet.nuspec')
+        self.pack_nuget('src/ohNet.NET.nuspec')
+        self.pack_nuget('src/ohNetGeneratedProxies.Combined.nuspec')
+        self.pack_nuget('src/ohNetGeneratedProviders.Combined.nuspec')
+
+
+        if not publish_release:
+            print('NOT PUBLISHING')
+        else:
+            self.publish_nuget(os.path.join('build', 'packages', '*.nupkg'), self.nuget_api_key)
+
+    def pack_nuget(self, project_name, base_path='.', output_path='build/packages'):
+        props_str = f'Configuration=Release;version={self.release_version}'
+
+        cmd = ['./nuget/nuget.exe', 'pack', project_name, '-BasePath', base_path, '-Properties', props_str]
+        if output_path is not None:
+            if not os.path.exists(output_path):
+                os.makedirs(output_path)
+            cmd += ['-OutputDirectory', output_path]
+
+        print(f'Packaging: {project_name}')
+        print(f'\n{cmd}')
+        subprocess.check_call(cmd)
+
+    def publish_nuget(self, package, api_key=None, server=None, config_file='nuget.config'):
+        cmd = ['./nuget/nuget.exe', 'push', package]
+
+        #nuget can be slow, so set a long timeout (in secs)
+        cmd += ['-Timeout', '10000']
+        cmd += ['-Source', 'https://api.nuget.org/v3/index.json'] 
+
+        print(f'Publishing: {package}')
+        print(f'\n{cmd}')
+        subprocess.check_call(cmd)
+              
+
+if __name__ == '__main__':
+
+    nuget_api_key           = self.env.get('NUGET_API_KEY')
+    ohnet_version           = self.env.get('OHNET_VERSION')
+    ohnet_generated_version = self.env.get('OHNET_GENERATED_VERSION')
+    release_version         = self.env.get('RELEASE_VERSION', '0.0.1')
+    publish_release         = self.enf.get('PUBLISH_RELEASE', 'false').tolower() == 'true'
+
+    print('Running ohNetPackaging...')
+    print('-------')
+    print(f'    ohNet Version: {ohnet_version}')
+    print(f'ohNet Gen Version: {ohnet_generated_version}')
+    print(f'  Release Version: {release_version}')
+    print(f'  Publish Release: {publish_release}')
+    print(f'    Nuget API Key: { nuget_api_key != ''}')
+    printf('-------')
+
+    if not ohnet_version or not ohnet_generated_version:
+        print('No ohNet versions specified')
+        sys.exit(1)
+
+    if not release_version and publish_release:
+        print('Publish specified but no release version')
+        sys.exit(1)
+
+    if not nuget_api_key and publish_release:
+        print('Publis specified but no nuget API key provided')
+        sys.exit(1)
+
+    b = Runner(nuget_api_key, ohnet_version, ohnet_generated_version, release_version, publish_release)
