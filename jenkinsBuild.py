@@ -49,7 +49,7 @@ class Runner():
 
         print(f'Packaging: {project_name}')
         print(f'\n{cmd}')
-        subprocess.check_call(cmd)
+        os.subprocess.check_call(cmd)
 
     def publish_nuget(self, package, api_key=None, server=None, config_file='nuget.config'):
         cmd = ['./nuget/nuget.exe', 'push', package]
@@ -60,7 +60,7 @@ class Runner():
 
         print(f'Publishing: {package}')
         print(f'\n{cmd}')
-        subprocess.check_call(cmd)
+        os.subprocess.check_call(cmd)
               
 
 if __name__ == '__main__':
