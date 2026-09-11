@@ -4,6 +4,7 @@ sys.path.append(os.path.abspath('../ohdevtools'))
 sys.path.append(os.path.abspath('ohdevtools'))
 import JenkinsBuildUtils as build
 import shutil
+import subprocess
 
 
 class Runner():
@@ -49,7 +50,7 @@ class Runner():
 
         print(f'Packaging: {project_name}')
         print(f'\n{cmd}')
-        os.subprocess.check_call(cmd)
+        subprocess.check_call(cmd)
 
     def publish_nuget(self, package, api_key=None, server=None, config_file='nuget.config'):
         cmd = ['./nuget/nuget.exe', 'push', package]
@@ -60,7 +61,7 @@ class Runner():
 
         print(f'Publishing: {package}')
         print(f'\n{cmd}')
-        os.subprocess.check_call(cmd)
+        subprocess.check_call(cmd)
               
 
 if __name__ == '__main__':
